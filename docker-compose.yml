@@ -1,0 +1,17 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: echo "it works"
+    ports:
+      - "3030:8000"
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:11.1-alpine
+    expose:
+      - "5432"
