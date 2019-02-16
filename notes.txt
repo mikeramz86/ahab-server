@@ -1,0 +1,23 @@
+2/9 Meeting
+
+- Real world situations
+- Better developer
+
+AHAB: the new Job Tracking System 
+
+BACKEND:
+    - built in node.js
+    - relational databases
+    -postgres
+    - json
+    - jwt
+    - express
+    - will use kinex.js to start and see if we need to move towards sequalize
+        note from Ian: so we went with knex, because in the early stages, before the data model is defined, 
+        we will have flexibility in any pivoting that may arise. Also with `knex` just being a query builder, 
+        the only relationships (other then the joins in our queries) lives only in the database. 
+        It is also easier to transition from knex to any ORM then to go back to knex if we decide ORM is too heavy and klunky to maintain.
+
+
+FRONT END
+    - Need to 
